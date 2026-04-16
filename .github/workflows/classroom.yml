@@ -118,4 +118,4 @@ jobs:
         uses: classroom-resources/autograding-grading-reporter@v1
         if: always()
         with:
-          runners: test1_,test2_,test3_,test4_,test5_,test6_
+          runners: "test1_,test2_,test3_,test4_,test5_,test6_"
