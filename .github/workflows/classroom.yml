@@ -20,15 +20,16 @@ jobs:
 
 
       - name: test1 (1 pt)
+        id: test1
         uses: classroom-resources/autograding-command-grader@v1
         with:
           test-name: test1
           command: |
-            set -e
             java TempConverter < tests/1_input.txt > actual.txt
             if diff --strip-trailing-cr actual.txt tests/1_expected.txt; then
               echo "PASS"
             else
+              echo diff --strip-trailing-cr actual.txt tests/1_expected.txt
               exit 1
             fi
           timeout: 2
@@ -36,15 +37,16 @@ jobs:
 
 
       - name: test2 (1 pt)
+        id: test2
         uses: classroom-resources/autograding-command-grader@v1
         with:
           test-name: test2
           command: |
-            set -e
             java TempConverter < tests/2_input.txt > actual.txt
             if diff --strip-trailing-cr actual.txt tests/2_expected.txt; then
               echo "PASS"
             else
+              echo diff --strip-trailing-cr actual.txt tests/2_expected.txt
               exit 1
             fi
           timeout: 2
@@ -52,15 +54,16 @@ jobs:
 
 
       - name: test3 (1 pt)
+        id: test3
         uses: classroom-resources/autograding-command-grader@v1
         with:
           test-name: test3
           command: |
-            set -e
             java TempConverter < tests/3_input.txt > actual.txt
             if diff --strip-trailing-cr actual.txt tests/3_expected.txt; then
               echo "PASS"
             else
+              echo diff --strip-trailing-cr actual.txt tests/3_expected.txt
               exit 1
             fi
           timeout: 2
@@ -68,15 +71,16 @@ jobs:
 
 
       - name: test4 (1 pt)
+        id: test4
         uses: classroom-resources/autograding-command-grader@v1
         with:
           test-name: test4
           command: |
-            set -e
             java TempConverter < tests/4_input.txt > actual.txt
             if diff --strip-trailing-cr actual.txt tests/4_expected.txt; then
               echo "PASS"
             else
+              echo diff --strip-trailing-cr actual.txt tests/4_expected.txt
               exit 1
             fi
           timeout: 2
@@ -84,15 +88,16 @@ jobs:
 
 
       - name: test5 (1 pt)
+        id: test5
         uses: classroom-resources/autograding-command-grader@v1
         with:
           test-name: test5
           command: |
-            set -e
             java TempConverter < tests/5_input.txt > actual.txt
             if diff --strip-trailing-cr actual.txt tests/5_expected.txt; then
               echo "PASS"
             else
+              echo diff --strip-trailing-cr actual.txt tests/5_expected.txt
               exit 1
             fi
           timeout: 2
@@ -100,15 +105,16 @@ jobs:
 
 
       - name: test6 (1 pt)
+        id: test6
         uses: classroom-resources/autograding-command-grader@v1
         with:
           test-name: test6
           command: |
-            set -e
             java TempConverter < tests/6_input.txt > actual.txt
             if diff --strip-trailing-cr actual.txt tests/6_expected.txt; then
               echo "PASS"
             else
+              echo diff --strip-trailing-cr actual.txt tests/6_expected.txt
               exit 1
             fi
           timeout: 2
