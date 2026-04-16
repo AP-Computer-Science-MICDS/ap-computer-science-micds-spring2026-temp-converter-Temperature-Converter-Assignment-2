@@ -29,7 +29,7 @@ jobs:
             # Extract the expected value from your file
             EXPECTED_VAL=$(cat tests/1_expected.txt)
             # Search for that value inside the student's output
-            if grep -q "$EXPECTED_VAL" actual.txt; then
+            if grep -q -- "$EXPECTED_VAL" actual.txt; then
               echo "PASS"
             else
               echo "FAIL: Could not find $EXPECTED_VAL in output."
@@ -51,7 +51,7 @@ jobs:
             # Extract the expected value from your file
             EXPECTED_VAL=$(cat tests/2_expected.txt)
             # Search for that value inside the student's output
-            if grep -q "$EXPECTED_VAL" actual.txt; then
+            if grep -q -- "$EXPECTED_VAL" actual.txt; then
               echo "PASS"
             else
               echo "FAIL: Could not find $EXPECTED_VAL in output."
@@ -73,7 +73,7 @@ jobs:
             # Extract the expected value from your file
             EXPECTED_VAL=$(cat tests/3_expected.txt)
             # Search for that value inside the student's output
-            if grep -q "$EXPECTED_VAL" actual.txt; then
+            if grep -q -- "$EXPECTED_VAL" actual.txt; then
               echo "PASS"
             else
               echo "FAIL: Could not find $EXPECTED_VAL in output."
@@ -95,7 +95,7 @@ jobs:
             # Extract the expected value from your file
             EXPECTED_VAL=$(cat tests/4_expected.txt)
             # Search for that value inside the student's output
-            if grep -q "$EXPECTED_VAL" actual.txt; then
+            if grep -q -- "$EXPECTED_VAL" actual.txt; then
               echo "PASS"
             else
               echo "FAIL: Could not find $EXPECTED_VAL in output."
@@ -117,7 +117,7 @@ jobs:
             # Extract the expected value from your file
             EXPECTED_VAL=$(cat tests/5_expected.txt)
             # Search for that value inside the student's output
-            if grep -q "$EXPECTED_VAL" actual.txt; then
+            if grep -q -- "$EXPECTED_VAL" actual.txt; then
               echo "PASS"
             else
               echo "FAIL: Could not find $EXPECTED_VAL in output."
@@ -139,7 +139,7 @@ jobs:
             # Extract the expected value from your file
             EXPECTED_VAL=$(cat tests/6_expected.txt)
             # Search for that value inside the student's output
-            if grep -q "$EXPECTED_VAL" actual.txt; then
+            if grep -q -- "$EXPECTED_VAL" actual.txt; then
               echo "PASS"
             else
               echo "FAIL: Could not find $EXPECTED_VAL in output."
