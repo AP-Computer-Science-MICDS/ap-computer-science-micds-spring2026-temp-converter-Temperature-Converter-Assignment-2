@@ -29,7 +29,7 @@ jobs:
             if diff --strip-trailing-cr actual.txt tests/1_expected.txt; then
               echo "PASS"
             else
-              echo diff --strip-trailing-cr actual.txt tests/1_expected.txt
+              diff --strip-trailing-cr actual.txt tests/1_expected.txt
               exit 1
             fi
           timeout: 2
@@ -46,7 +46,7 @@ jobs:
             if diff --strip-trailing-cr actual.txt tests/2_expected.txt; then
               echo "PASS"
             else
-              echo diff --strip-trailing-cr actual.txt tests/2_expected.txt
+              diff --strip-trailing-cr actual.txt tests/2_expected.txt
               exit 1
             fi
           timeout: 2
@@ -63,7 +63,7 @@ jobs:
             if diff --strip-trailing-cr actual.txt tests/3_expected.txt; then
               echo "PASS"
             else
-              echo diff --strip-trailing-cr actual.txt tests/3_expected.txt
+              diff --strip-trailing-cr actual.txt tests/3_expected.txt
               exit 1
             fi
           timeout: 2
@@ -80,7 +80,7 @@ jobs:
             if diff --strip-trailing-cr actual.txt tests/4_expected.txt; then
               echo "PASS"
             else
-              echo diff --strip-trailing-cr actual.txt tests/4_expected.txt
+              diff --strip-trailing-cr actual.txt tests/4_expected.txt
               exit 1
             fi
           timeout: 2
@@ -97,7 +97,7 @@ jobs:
             if diff --strip-trailing-cr actual.txt tests/5_expected.txt; then
               echo "PASS"
             else
-              echo diff --strip-trailing-cr actual.txt tests/5_expected.txt
+              diff --strip-trailing-cr actual.txt tests/5_expected.txt
               exit 1
             fi
           timeout: 2
@@ -114,7 +114,7 @@ jobs:
             if diff --strip-trailing-cr actual.txt tests/6_expected.txt; then
               echo "PASS"
             else
-              echo diff --strip-trailing-cr actual.txt tests/6_expected.txt
+              diff --strip-trailing-cr actual.txt tests/6_expected.txt
               exit 1
             fi
           timeout: 2
