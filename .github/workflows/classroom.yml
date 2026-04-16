@@ -155,11 +155,11 @@ jobs:
         uses: classroom-resources/autograding-grading-reporter@v1
         env:
           TEST1_RESULTS: "${steps.test1.outputs.result}" 
-          TEST1_RESULTS: "${steps.test2.outputs.result}" 
-          TEST1_RESULTS: "${steps.test3.outputs.result}" 
-          TEST1_RESULTS: "${steps.test4.outputs.result}" 
-          TEST1_RESULTS: "${steps.test5.outputs.result}" 
-          TEST1_RESULTS: "${steps.test6.outputs.result}" 
+          TEST2_RESULTS: "${steps.test2.outputs.result}" 
+          TEST3_RESULTS: "${steps.test3.outputs.result}" 
+          TEST4_RESULTS: "${steps.test4.outputs.result}" 
+          TEST5_RESULTS: "${steps.test5.outputs.result}" 
+          TEST6_RESULTS: "${steps.test6.outputs.result}" 
 
         with:
           runners: test1,test2,test3,test4,test5,test6,
